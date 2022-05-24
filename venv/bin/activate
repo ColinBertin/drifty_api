@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/abauville/Web_Dev/Apps/drifty_api/venv"
+VIRTUAL_ENV="/Users/colinbertin/code/ColinBertin/drifty_api/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
