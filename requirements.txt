@@ -1,0 +1,5 @@
+numpy
+getgfs
+flask
+ipython
+matplotlib
