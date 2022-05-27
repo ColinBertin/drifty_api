@@ -10,6 +10,7 @@ where `lon` is longitude, and `lat` is latitude
 - Activate it: `. venv/bin/activate`
 - Install python dependencies: `python -m pip install -r requirements.txt`
 - To use Ipython in venv see [this](https://stackoverflow.com/questions/20327621/calling-ipython-from-a-virtualenv) answer by TheDataGuy
+- Start local server: `python -m flask run`
 
 ## Notes
 

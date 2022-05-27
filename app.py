@@ -1,3 +1,4 @@
+from tracemalloc import reset_peak
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -14,10 +15,13 @@ def hello_world():
         return jsonify({"error": "longitude and latitude must be floating point numbers. The API can be called with e.g.: base_url/?lon=-12.0&lat=13.0"})
 
     #　Get data
-    u, v = get_wind_speed(latitude, longitude)       
-    return jsonify( {
-        "lon": longitude, 
-        "lat": latitude, 
-        "wind_u": u[0,0],
-        "wind_v": v[0,0]
+    u, v = get_wind_speed(latitude, longitude)
+    response = jsonify( {
+        "lon": longitude,
+        "lat": latitude,
+        "wind_u": u[0,0],  # longitude
+        "wind_v": v[0,0]   # latitude
     } )
+
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
