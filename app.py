@@ -22,8 +22,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    longitude = request.args.get('longitude')
-    latitude = request.args.get('latitude')
+    longitude = float(request.args.get('lon'))
+    latitude = float(request.args.get('lat'))
     return jsonify(longitude, latitude)
     # print(longitude)
     # print(latitude)
