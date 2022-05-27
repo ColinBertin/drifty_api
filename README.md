@@ -1,7 +1,7 @@
 # Drifty
 
 # API access
-```http://127.0.0.1:5000/?lon=12.0&lat=13.0```,
+```http://127.0.0.1:5000/?lon=12.1&lat=13.0```,
 where `lon` is longitude, and `lat` is latitude
 
 ## Installation
